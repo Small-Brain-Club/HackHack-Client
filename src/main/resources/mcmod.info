@@ -1,0 +1,15 @@
+[
+{
+  "modid": "ruhama",
+  "name": "Ruhama (Deauthed)",
+  "description": "The Ruhama utility mod with auth checks removed. Like 90% is KAMI Blue lol",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "credits": "Ruhama devs for the actual client (lol) & Dewy for leakage.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
