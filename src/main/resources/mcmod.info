@@ -1,7 +1,7 @@
 [
 {
-  "modid": "ruhama",
-  "name": "Ruhama (Deauthed)",
+  "modid": "hackhack",
+  "name": "HackHack Client",
   "description": "HackHack Client, best client for block game",
   "version": "${version}",
   "mcversion": "${mcversion}",
