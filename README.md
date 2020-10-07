@@ -1,3 +1,3 @@
 # HackHack-Client
-HackHack - Best block game client
+HackHack - Best Block Game Hacked Client
 Made by Vp#8865 and CUPZYY#0001
