@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ModuleManager
 {
-    private static final List<Module> mods = Arrays.asList(new AntiChunkBan(), new Aura(), new Auto32k(), new AutoLog(), new AutoTotem(), new AutoWither(), new BedAura(), new ClickGui(), new Crasher(), new CrystalAura(), new CrystalAura2(), new DispenserAura(), new ElytraFly(), new ElytraReplace(), new Gui(), new HoleFiller(), new HoleFinderESP(), new HopperNuker(), new HopperRadius(), new InvSorter(), new NBTViewer(), new NewAuto32k(), new ObsidianTrap(), new PearlViewer(), new Peek(), new PlayerRadar(), new RuhamaOntop(), new ShulkerAura(), new StashFinder(), new StrengthESP(), new Surround(), new ThunderHack(), new TreeAura(), new TunnelESP(), new Welcomer());
+    private static final List<Module> mods = Arrays.asList(new AntiChunkBan(), new Aura(), new Auto32k(), new AutoLog(), new AutoTotem(), new AutoWither(), new BedAura(), new ClickGui(), new Crasher(), new CrystalAura(), new CrystalAura2(), new DispenserAura(), new ElytraFly(), new ElytraReplace(), new Gui(), new HoleFiller(), new HoleFinderESP(), new HopperNuker(), new HopperRadius(), new InvSorter(), new NBTViewer(), new NewAuto32k(), new ObsidianTrap(), new PearlViewer(), new Peek(), new PlayerRadar(), new ShulkerAura(), new StashFinder(), new StrengthESP(), new Surround(), new ThunderHack(), new TreeAura(), new TunnelESP(), new Welcomer());
 
     public static List<Module> getModules()
     {

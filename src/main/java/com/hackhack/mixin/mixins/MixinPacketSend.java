@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import com.hackhack.Ruhama;
+import com.hackhack.HackHack;
 import com.hackhack.module.ModuleManager;
 
 @Mixin({NetHandlerPlayClient.class})
@@ -39,7 +39,7 @@ public class MixinPacketSend
             {
                 BlockPos pos = packet.getPos().offset(packet.getDirection());
                 System.out.println("Rightclicked at: " + System.currentTimeMillis());
-                Ruhama.friendBlocks.put(pos, 300);
+                HackHack.friendBlocks.put(pos, 300);
             }
         }
     }

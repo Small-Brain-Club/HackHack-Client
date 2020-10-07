@@ -2,12 +2,12 @@
 {
   "modid": "ruhama",
   "name": "Ruhama (Deauthed)",
-  "description": "The Ruhama utility mod with auth checks removed. Like 90% is KAMI Blue lol",
+  "description": "HackHack Client, best client for block game",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "credits": "Ruhama devs for the actual client (lol) & Dewy for leakage.",
+  "credits": "CUPZYY and Vp",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

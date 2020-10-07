@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
 
-import com.hackhack.Ruhama;
+import com.hackhack.HackHack;
 import com.hackhack.module.Category;
 import com.hackhack.module.Module;
 import com.hackhack.utils.WorldUtils;
@@ -66,7 +66,7 @@ public class ShulkerAura extends Module
                         {
                             BlockPos pos = this.mc.player.getPosition().add(x, y, z);
 
-                            if (this.mc.world.getBlockState(pos).getBlock() instanceof BlockShulkerBox && !Ruhama.friendBlocks.containsKey(pos) && !this.openedShulkers.containsKey(pos) && this.mc.player.getPositionVector().distanceTo((new Vec3d(pos)).add(0.5D, 0.5D, 0.5D)) <= 5.25D)
+                            if (this.mc.world.getBlockState(pos).getBlock() instanceof BlockShulkerBox && !HackHack.friendBlocks.containsKey(pos) && !this.openedShulkers.containsKey(pos) && this.mc.player.getPositionVector().distanceTo((new Vec3d(pos)).add(0.5D, 0.5D, 0.5D)) <= 5.25D)
                             {
                                 WorldUtils.openBlock(pos);
 

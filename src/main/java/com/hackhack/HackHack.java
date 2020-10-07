@@ -42,7 +42,7 @@ import java.util.Objects;
         version = "1.0",
         acceptedMinecraftVersions = "[1.12.2]"
 )
-public class Ruhama
+public class HackHack
 {
     public static Minecraft mc = Minecraft.getMinecraft();
     public static HashMap<BlockPos, Integer> friendBlocks = new HashMap<>();
