@@ -41,7 +41,7 @@ public class NewRuhamaGui extends GuiScreen
     {
         this.drawDefaultBackground();
         super.drawScreen(mouseX, mouseY, partialTicks);
-        this.fontRenderer.drawStringWithShadow("HackHack Client", 2.0F, 2.0F, 3166352);
+        this.fontRenderer.drawStringWithShadow("HackHack Client", 2.0F, 2.0F, 0x03f0fc);
 
         Iterator tabsIter = this.tabs.iterator();
 
