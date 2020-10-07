@@ -10,7 +10,7 @@ import java.util.Objects;
 import com.hackhack.module.Category;
 import com.hackhack.module.Module;
 import com.hackhack.utils.FileMang;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 
 public class InvSorter extends Module
 {
@@ -28,7 +28,7 @@ public class InvSorter extends Module
 
         if (this.items.size() < 9)
         {
-            RuhamaLogger.log("No Inventory Saved, Use /invsorter to save your hotbar");
+            HackHackLogger.log("No Inventory Saved, Use /invsorter to save your hotbar");
 
             this.setToggled(false);
         }

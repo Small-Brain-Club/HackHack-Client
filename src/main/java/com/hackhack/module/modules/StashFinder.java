@@ -28,7 +28,7 @@ import com.hackhack.settings.SettingSlider;
 import com.hackhack.settings.SettingToggle;
 import com.hackhack.utils.FileMang;
 import com.hackhack.utils.RenderUtils;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -118,7 +118,7 @@ public class StashFinder extends Module
     {
         if (this.startChunk != null)
         {
-            RuhamaLogger.log("StashFinder: Starting from " + this.startChunk.getXStart() + ", " + this.startChunk.getZStart());
+            HackHackLogger.log("StashFinder: Starting from " + this.startChunk.getXStart() + ", " + this.startChunk.getZStart());
 
             this.range = ((int) Math.max(Math.abs(this.mc.player.posX - (double) this.startChunk.getXStart()), Math.abs(this.mc.player.posZ - (double) this.startChunk.getZStart())) >> 4) - 1;
         } else if (this.getSettings().get(0).toMode().mode == 1)

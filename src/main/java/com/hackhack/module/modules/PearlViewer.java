@@ -11,7 +11,7 @@ import com.hackhack.settings.SettingBase;
 import com.hackhack.settings.SettingSlider;
 import com.hackhack.settings.SettingToggle;
 import com.hackhack.utils.RenderUtils;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 
 import java.util.*;
 import java.util.Map.Entry;
@@ -70,7 +70,7 @@ public class PearlViewer extends Module
                         {
                             if (entityPlayer.getDistance(e) < 4.0F && ((Entity) entityPlayer).getName() != this.mc.player.getName())
                             {
-                                RuhamaLogger.log(((Entity) entityPlayer).getName() + " Threw a pearl");
+                                HackHackLogger.log(((Entity) entityPlayer).getName() + " Threw a pearl");
 
                                 break;
                             }

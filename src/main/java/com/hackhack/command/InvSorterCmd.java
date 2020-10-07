@@ -9,7 +9,7 @@ import net.minecraftforge.client.IClientCommand;
 import java.util.Objects;
 
 import com.hackhack.utils.FileMang;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 
 public class InvSorterCmd extends CommandBase implements IClientCommand
 {
@@ -40,7 +40,7 @@ public class InvSorterCmd extends CommandBase implements IClientCommand
         FileMang.createEmptyFile("invsorter.txt");
         FileMang.appendFile(s, "invsorter.txt");
 
-        RuhamaLogger.log("Saved Inventory");
+        HackHackLogger.log("Saved Inventory");
     }
 
     public boolean checkPermission(MinecraftServer server, ICommandSender sender)

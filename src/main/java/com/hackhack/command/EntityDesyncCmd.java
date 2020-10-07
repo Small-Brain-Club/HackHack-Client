@@ -1,6 +1,6 @@
 package com.hackhack.command;
 
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.command.CommandBase;
@@ -53,7 +53,7 @@ public class EntityDesyncCmd extends CommandBase implements IClientCommand
             {
                 if (this.mc.player.getRidingEntity() == null)
                 {
-                    RuhamaLogger.log("No entity to dismount");
+                    HackHackLogger.log("No entity to dismount");
                     return;
                 }
 
@@ -63,12 +63,12 @@ public class EntityDesyncCmd extends CommandBase implements IClientCommand
                 this.mc.world.removeEntity(this.entity);
 
                 MinecraftForge.EVENT_BUS.register(this);
-                RuhamaLogger.log("Dismounted");
+                HackHackLogger.log("Dismounted");
             } else
             {
                 if (this.entity == null)
                 {
-                    RuhamaLogger.log("No entity to remount");
+                    HackHackLogger.log("No entity to remount");
                     return;
                 }
 
@@ -79,11 +79,11 @@ public class EntityDesyncCmd extends CommandBase implements IClientCommand
                 this.entity = null;
 
                 MinecraftForge.EVENT_BUS.unregister(this);
-                RuhamaLogger.log("Remounted");
+                HackHackLogger.log("Remounted");
             }
         } else
         {
-            RuhamaLogger.log("Invalid syntax, /entitydesync (dismount/remount)");
+            HackHackLogger.log("Invalid syntax, /entitydesync (dismount/remount)");
         }
     }
 

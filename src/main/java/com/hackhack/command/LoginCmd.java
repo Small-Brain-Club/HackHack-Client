@@ -1,7 +1,7 @@
 package com.hackhack.command;
 
 import com.hackhack.utils.ReflectUtils;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 import com.mojang.authlib.Agent;
 import com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService;
 import com.mojang.authlib.yggdrasil.YggdrasilUserAuthentication;
@@ -38,10 +38,10 @@ public class LoginCmd extends CommandBase implements IClientCommand
         {
             if (this.login(args[0], args[1]).equals(""))
             {
-                RuhamaLogger.log("Logged in");
+                HackHackLogger.log("Logged in");
             } else
             {
-                RuhamaLogger.log("Invalid login");
+                HackHackLogger.log("Invalid login");
             }
         } catch (Exception ignored)
         {

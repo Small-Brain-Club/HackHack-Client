@@ -29,7 +29,7 @@ import com.hackhack.settings.SettingBase;
 import com.hackhack.settings.SettingSlider;
 import com.hackhack.settings.SettingToggle;
 import com.hackhack.utils.RenderUtils;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 
 public class CrystalAura2 extends Module
 {
@@ -480,7 +480,7 @@ public class CrystalAura2 extends Module
     {
         if (this.getSettings().get(6).toToggle().state)
         {
-            RuhamaLogger.log("AutoCrystal: ON");
+            HackHackLogger.log("AutoCrystal: ON");
         }
     }
 
@@ -488,7 +488,7 @@ public class CrystalAura2 extends Module
     {
         if (this.getSettings().get(6).toToggle().state)
         {
-            RuhamaLogger.log("AutoCrystal: OFF");
+            HackHackLogger.log("AutoCrystal: OFF");
         }
 
         this.render = null;

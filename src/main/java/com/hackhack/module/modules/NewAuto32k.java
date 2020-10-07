@@ -25,7 +25,7 @@ import com.hackhack.settings.SettingBase;
 import com.hackhack.settings.SettingMode;
 import com.hackhack.settings.SettingSlider;
 import com.hackhack.settings.SettingToggle;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 import com.hackhack.utils.WorldUtils;
 
 public class NewAuto32k extends Module
@@ -91,19 +91,19 @@ public class NewAuto32k extends Module
 
         if (this.hopper == -1)
         {
-            RuhamaLogger.log("Missing Hopper");
+            HackHackLogger.log("Missing Hopper");
         } else if (dispenser == -1)
         {
-            RuhamaLogger.log("Missing Dispenser");
+            HackHackLogger.log("Missing Dispenser");
         } else if (this.redstone == -1)
         {
-            RuhamaLogger.log("Missing Redstone Block");
+            HackHackLogger.log("Missing Redstone Block");
         } else if (this.shulker == -1)
         {
-            RuhamaLogger.log("Missing Shulker");
+            HackHackLogger.log("Missing Shulker");
         } else if (block == -1)
         {
-            RuhamaLogger.log("Missing Generic Block");
+            HackHackLogger.log("Missing Generic Block");
         }
 
         if (this.hopper != -1 && dispenser != -1 && this.redstone != -1 && this.shulker != -1 && block != -1)
@@ -128,7 +128,7 @@ public class NewAuto32k extends Module
                     WorldUtils.placeBlock(this.pos.add(0, 1, 0), dispenser, false, false);
                 } else
                 {
-                    RuhamaLogger.log("Unable to place 32k");
+                    HackHackLogger.log("Unable to place 32k");
 
                     this.setToggled(false);
                 }
@@ -157,7 +157,7 @@ public class NewAuto32k extends Module
                     }
                 }
 
-                RuhamaLogger.log("Unable to place 32k");
+                HackHackLogger.log("Unable to place 32k");
                 this.setToggled(false);
             }
         } else

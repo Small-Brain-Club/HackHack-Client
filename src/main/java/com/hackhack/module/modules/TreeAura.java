@@ -20,7 +20,7 @@ import com.hackhack.settings.SettingMode;
 import com.hackhack.settings.SettingSlider;
 import com.hackhack.settings.SettingToggle;
 import com.hackhack.utils.RenderUtils;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 import com.hackhack.utils.WorldUtils;
 
 public class TreeAura extends Module
@@ -65,7 +65,7 @@ public class TreeAura extends Module
 
         if (sapling == -1)
         {
-            RuhamaLogger.log("No sapling");
+            HackHackLogger.log("No sapling");
 
             this.setToggled(false);
         } else
@@ -188,7 +188,7 @@ public class TreeAura extends Module
 
             if (this.getSettings().get(0).toMode().mode == 0)
             {
-                RuhamaLogger.log("Nowhere to place sapling");
+                HackHackLogger.log("Nowhere to place sapling");
 
                 this.setToggled(false);
             } else
@@ -244,7 +244,7 @@ public class TreeAura extends Module
             if (sapling == -1)
             {
 
-                RuhamaLogger.log("No sapling");
+                HackHackLogger.log("No sapling");
                 this.setToggled(false);
             } else
             {

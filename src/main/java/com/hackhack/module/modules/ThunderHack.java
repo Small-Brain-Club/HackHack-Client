@@ -14,7 +14,7 @@ import com.hackhack.module.Category;
 import com.hackhack.module.Module;
 import com.hackhack.settings.SettingBase;
 import com.hackhack.settings.SettingToggle;
-import com.hackhack.utils.RuhamaLogger;
+import com.hackhack.utils.HackHackLogger;
 
 public class ThunderHack extends Module
 {
@@ -55,7 +55,7 @@ public class ThunderHack extends Module
 
         if (newPos != null)
         {
-            RuhamaLogger.log("Thunder struck at: " + TextFormatting.ITALIC + newPos.getX() + TextFormatting.WHITE + ", " + TextFormatting.ITALIC + newPos.getY() + TextFormatting.WHITE + ", " + TextFormatting.ITALIC + newPos.getZ());
+            HackHackLogger.log("Thunder struck at: " + TextFormatting.ITALIC + newPos.getX() + TextFormatting.WHITE + ", " + TextFormatting.ITALIC + newPos.getY() + TextFormatting.WHITE + ", " + TextFormatting.ITALIC + newPos.getZ());
 
             if (this.getSettings().get(0).toToggle().state && this.mc.player.getPosition().getDistance(newPos.getX(), newPos.getY(), newPos.getZ()) > 100.0D)
             {
