@@ -16,7 +16,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'com.github.johnrengelman.shadow'
 
-version = 'b0.8'
+version = '1.0'
 group = 'gg.ruhama'
 archivesBaseName = 'ruhama'
 
