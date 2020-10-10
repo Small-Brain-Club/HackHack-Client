@@ -18,14 +18,14 @@ import com.hackhack.settings.SettingBase;
 import com.hackhack.settings.SettingSlider;
 import com.hackhack.settings.SettingToggle;
 
-public class Aura extends Module
+public class KillAura extends Module
 {
     private static final List<SettingBase> settings = Arrays.asList(new SettingToggle(true, "WeaponFilter"), new SettingToggle(true, "1.9 Delay"), new SettingToggle(true, "Thru Walls"), new SettingToggle(true, "Crits"), new SettingSlider(0.0D, 6.0D, 4.5D, 2, "Range: "), new SettingSlider(0.0D, 20.0D, 8.0D, 0, "CPS: "));
     private int delay = 0;
 
-    public Aura()
+    public KillAura()
     {
-        super("Aura", 0, Category.COMBAT, "Attacks Players", settings);
+        super("KillAura", 0, Category.COMBAT, "Attacks Players", settings);
     }
 
     public void onUpdate()
